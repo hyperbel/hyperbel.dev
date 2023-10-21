@@ -1,0 +1,57 @@
+@font-face {
+    font-family: defaultFont;
+    src: url(./TerminusTTF.ttf) format('truetype');
+}
+
+body {
+    font-family: 'defaultFont', monospace;
+    background-color: #131316;
+    color: white;
+    font-size: 30px;
+}
+/* navigation bar */
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type=radio]:checked + label {
+    text-decoration: underline;
+}
+
+article {
+    display: none;
+    font-family: 'defaultFont', monospace;
+}
+
+#home_button:checked ~ #home {
+    display: block;
+}
+
+#about_button:checked ~ #about {
+    display: block;
+}
+
+#projects_button:checked ~ #projects {
+    display: block;
+}
+
+/* end navigation bar */
+
+/* projects page */
+details summary {
+    cursor: pointer;
+}
+/* end projects page */
+
+footer {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+

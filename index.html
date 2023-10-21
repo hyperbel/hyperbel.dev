@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>hyperbel's website</title>
+    </head>
+    <body>
+        <header>
+        </header>
+        <main>
+            <input type="radio" name="navigation" id="home_button" checked>
+            &nbsp<label for="home_button">home/</label>
+            <input type="radio" name="navigation" id="projects_button">
+            &nbsp<label for="projects_button">projects/</label>
+
+            <article id="home">
+                <h1>Hi, im hyperbel</h1>
+            </article>
+
+            <article id="projects">
+                <h1>projects</h1>
+                <details>
+                    <summary>
+                        this website!
+                    </summary>
+                    i built this website using plain html + css. it's served using nginx.
+                </details>
+                <details>
+                    <summary>
+                        resq-disk
+                    </summary>
+                    this is an iso image based on archiso with some more tools pre-installed, for hopefully making it easier to recover / rescue a broken system.
+                </details>
+                <details>
+                    <summary>
+                        simpleNAS
+                    </summary>
+                    i made a nas thingy in go. it's not very good, but it works (i think).
+                </details>
+                <details>
+                    <summary>
+                        mt
+                    </summary>
+                    a tool for moving things to the trash bin, instead of deleting it like with <code>rm</code>
+            </article>
+
+        </main>
+        <footer>
+            <hr/>
+            <p><a href="https://github.com/hyperbel">@hyperbel</a> on github</p>
+        </footer>
+    </body>
+</html>
